@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>	
+	<link href="css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="conteiner">
+		<header>
+			<div class="logo"></div>
+			<div class="title"><h1>Zoo Keeper Application</h1><div>
+		</header>
+		
+		<div class="main-content">
+		<aside>
+			<div class="menu" >
+				<ul id="menu_layer">
+					<li class="blue">Products</li>
+					<li class="white"><a href="#">Products</a></li>
+					<li class="white"><a href="#">Services</a></li>
+					<li class="white"><a href="#">Feedback</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul>
+					<li class="blue">Reports</li>
+					<li class="white"><a href="#">Assigned Issues</a></li>
+					<li class="white"><a href="#">Summary View</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul>
+					<li class="blue">Info</li>
+					<li class="white"><a href="#">Home</a></li>
+					<li class="white"><a href="#">Articles</a></li>
+					<li class="white"><a href="#">About Us</a></li>
+				</ul>
+			</div>			
+		</aside>
+		
+		<article>
+			<p>Please complete the form.</p>
+			<form>
+			
+				<fieldset>
+					<legend class="color_h">Contact Details</legend>
+						<span>
+							<label>Name <br><input type="text" name="Name" required placeholder="Иван Иванов"></label>
+							<label>Telephone <br><input type="text" name="Telephone" required placeholder="+7988323848"></label>
+						</span>
+						<span>
+							<label>Email <br><input type="text" name="Email" placeholder="mail@mail.ru"></label>
+							<label>Web site <br><input type="text" name="Web site" placeholder="www.site.com"></label>
+						</span>
+				</fieldset>
+
+				<fieldset>
+					<legend class="color_h">Person Details</legend>
+						<span>
+							<label>Birthday<br><input type="date" name="Date" required></label>
+							<label>Gender<br><select name="Gender">
+							  <option value="Male">Male</option>
+						 	 <option value="Female">Female</option>
+							</select>
+							</label>
+							<label>Registration date<br><input type="date" name="Date"></label>
+						</span>
+						<span>
+							<label>When did you first know you wanted to be a zoo-keeper?<br>
+							<textarea name="info" rows="4" cols="25"></textarea></label>
+							<br>
+						</span>
+						<span>
+							<label>Pick Your Favoutite Animals</label>
+						</span>
+						<span>
+							<label>Dog<input type="checkbox"></label>
+							<label>Cat<input type="checkbox"></label>
+							<label>Turtle<input type="checkbox"></label>
+							<label>Fish<input type="checkbox"></label>
+							<label>Parrot<input type="checkbox"></label>
+							<label>Cannary<input type="checkbox"></label>
+							<label>Color of Pet<br><input type="color"></label>
+						</span>
+				</fieldset>
+				<input class="button_1" type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</form>
+		</article></div>
+	</div>
+</body>
+</html>
